@@ -17,3 +17,7 @@ function handleSubmit(event) {
     // Tampilkan ucapan terima kasih
     document.getElementById('thankyou-msg').style.display = 'block';
 }
+
+// Script untuk mengubah guest menjadi username
+
+

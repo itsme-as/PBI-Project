@@ -103,7 +103,7 @@
                     </h1>
                     <article>
                         <p>Hello all! Alief (aes) is here, my full name is 'Alief Maulana Shiddiq' I'm from Depok <span style="text-decoration: line-through;">country</span> city.
-                        Nowaday my activity is being a Math teacher at Ganesha Operation, I have a hobby in arts like musical, drawing, and painting, evenmore I like to make a resin art, etc
+                        Nowaday my activity is being a Math teacher at Ganesha Operation, I have a hobby in arts like musical, drawing, and painting, evenmore I like to make a resin art, etc.
                         I have some interest to FrontEnd Development because its like a cup of art to pour a creativity into a web.</p>
                         <p id="see-ya">If you find me in Jabodetabek or somewhere, just call me yaa! See ya!</p>
                     </article>
@@ -119,7 +119,7 @@
         <!-- ini bagian contact us -->
         <section id="contact-id" class="contact-page">
             <h1>Text us</h1>
-            <h2>If you have a question or want to disscus something</h2>
+            <h2>If you have a question or want to discuss something</h2>
             <div>
                 <form class="msg-form">
                     <fieldset>
@@ -159,5 +159,12 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const username = localStorage.getItem("username") || "Guest";
+            document.getElementById("user-name-login").textContent = username + "!";
+        });
+    </script>
 </body>
 </html>

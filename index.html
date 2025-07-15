@@ -24,11 +24,20 @@
                     <input type="text" id="uname" name="uname" placeholder="Type your username" required></br>
                     <label for="pwd">Password:</label>
                     <input type="password" id="pwd" name="pwd" placeholder="Type your password" required></br>
-                    <button class="btn-login" type="submit"><a href="home.html">Login</a></button>
+                    <button class="btn-login" type="submit">Login</button>
                 </fieldset>        
             </form>
             <p>Don't have an account? <a href="register.html">Register here</a></p>
         </div>
     </div>
+
+    <script>
+        function storeUsername() {
+        const username = document.getElementById("uname").value;
+        localStorage.setItem("username", username);
+        }
+    </script>
+
 </body>
+
 </html>
