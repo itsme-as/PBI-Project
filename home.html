@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="assets/icon.png">
+    <script src="js/script.js" defer></script>
+    <title>Aes GoA</title>
+</head>
+<body>
+    <!-- Ini section untuk header yang berisi navigasi -->
+    <header>
+        <nav>
+            <div>
+                <div class="logo">
+                    <img src="assets/logo.png" alt="Aes GoA Logo">
+                    <p>Aes | Gallery of art</p>
+                </div>
+            </div>
+            <ul id="nav-list">
+                <li><a href="#home-id" class="active">Home</a></li>
+                <li><a href="#gallery-id">Gallery</a></li>
+                <li><a href="#about-id">About Me</a></li>
+                <li><a href="#contact-id">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Ini main pahe -->
+    <main>
+        <!-- Ini bagian untuk home section -->
+        <section id="home-id" class="home-page">
+            <div class="home-wrapper">
+                <article>
+                    <h1>Hello <span id="user-name-login">Guest!</span></h1>
+                    <h1>Welcome to <span style="background-color: rgba(224, 77, 9, 0.2);">Aes | Gallery of Art</span></h1>
+                    <p>Explore my 
+                        <span class="index-text active-index">cretivity</span>
+                        <span class="index-text">portofolio</span>
+                        <span class="index-text">art</span>
+                        <span class="index-text">idea</span> 
+                    here.</p>
+                </article>
+                <div>
+                    <img src="assets/jane.png" alt="It is Jane" class="home-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Ini Bagian utama yang dijual yaitu gambar gambar (galeri)-->
+        <section id="gallery-id" class="art-page">
+            <h1>These are <span>Aes | Gallery of Art</span></h1>
+            <div class="scroll-logo">
+                <section class="example example--2">
+                    <span class="scroll-icon">
+                        <span class="scroll-icon__dot"></span>
+                    </span>
+                </section>
+            </div>
+            <div class="row1">
+                <div class="row1-col1">
+                    <img src="assets/r1c1.png" width="auto" height="100%">
+                </div>
+                <div class="row1-col2">
+                    <img src="assets/r1c2.png" width="auto" height="100%">
+                </div>
+                <div class="row1-col3">
+                    <img src="assets/r1c3.png" width="auto" height="100%">
+                </div>
+            </div>
+            <div class="row2">
+                <div class="row2-col1">
+                    <img src="assets/r2c1.png" width="auto" height="100%">
+                </div>
+                <div class="row2-col2">
+                    <img src="assets/r2c2.png" width="auto" height="100%">
+                </div>
+                <div class="row2-col3">
+                    <img src="assets/r2c3.png" width="auto" height="100%">
+                </div>
+            </div>
+            <div class="row3">
+                <div class="row3-col1">
+                    <img src="assets/r3c1.png" width="auto" height="100%">
+                </div>
+                <div class="row3-col2">
+                    <img src="assets/r3c2.png" width="auto" height="100%">
+                </div>
+                <div class="row3-col3">
+                    <img src="assets/r3c3.png" width="auto" height="100%">
+                </div>
+            </div>
+            <p>These arts uploaded at <a href="https://instagram.com/as__hddq">@as__hddq</a></p>
+        </section>
+
+        <!-- Ini Bagian untuk About me page -->
+        <section id="about-id" class="about-page">
+            <div class="about-wrapper">
+                <div class="about-text">
+                    <h1>
+                    About me & My hobby
+                    </h1>
+                    <article>
+                        <p>Hello all! Alief (aes) is here, my full name is 'Alief Maulana Shiddiq' I'm from Depok <span style="text-decoration: line-through;">country</span> city.
+                        Nowaday my activity is being a Math teacher at Ganesha Operation, I have a hobby in arts like musical, drawing, and painting, evenmore I like to make a resin art, etc
+                        I have some interest to FrontEnd Development because its like a cup of art to pour a creativity into a web.</p>
+                        <p id="see-ya">If you find me in Jabodetabek or somewhere, just call me yaa! See ya!</p>
+                    </article>
+                    <div class="contact-wrapper">
+                        <a class="logo-contact" href="https://instagram.com/alief__shiddiq"><div><img src="assets/instagram.png" width="40px"></div></a>
+                        <a class="logo-contact" href="https://linkedin.com/in/aliefshiddiq1"><div><img src="assets/linkedin.png" width="40px"></div></a>
+                    </div>
+                </div>
+                <img src="assets/me.png" alt="Aes pic" width="20%">
+            </div>
+        </section>
+
+        <!-- ini bagian contact us -->
+        <section id="contact-id" class="contact-page">
+            <h1>Text us</h1>
+            <h2>If you have a question or want to disscus something</h2>
+            <div>
+                <form class="msg-form">
+                    <fieldset>
+                        <legend>Massage Us</legend>
+                        <label for="name">Name:</label>
+                        <input type="text" id="msg-name" name="name" placeholder="Type your name here" required></br>
+                        <label for="phone">Phone:</label>
+                        <input type="tel" pattern="[0-9]" id="msg-phone" name="phone" placeholder="Type your active number" required></br>
+                        <label for="msg">Massage</label>
+                        <textarea class="input-msg" placeholder="Type your massage"></textarea>
+                        <button class="btn-msg" type="submit" onclick="handleSubmit(event)">Submit</button>
+                    </fieldset>        
+                </form>
+            </div>
+            <p id="thankyou-msg" style="display: none; color: white;">Thanks for texting us</p>
+        </section>
+    </main>
+
+    <!-- Last page -->
+    <footer>
+        <div class="foot-wrapper">
+            <div class="logo-foot">
+                <img src="assets/logo.png" width="100%" alt="Logo">
+            </div>
+            <div class="about-foot">
+                <h1>Alief Maulana Shiddiq</h1>
+                <p><a href="https://instagram.com/alief__shiddiq" target="_blank">Instagram</a></p>
+                <p><a href="https://linkedin.com/in/aliefshiddiq1" target="_blank">Linkedin</a></p>
+                <p><a href="https://gmail.com" target="_blank">aliefshiddiq0@gmail.com</a></p>
+                <p><a href="https://wa.me/+6287763918048" target="_blank">Whatsapp</a></p>
+            </div>
+            <div class="maps-foot">
+                <h1>Depok, Jawa Barat</h1>
+                <p>Beji</p>
+                <p>Kukusan</p>
+                <p><a href="https://www.google.com/maps/place/Kukusan,+Kecamatan+Beji,+Kota+Depok,+Jawa+Barat/@-6.3654334,106.8087901,15z/data=!3m1!4b1!4m6!3m5!1s0x2e69ec1e0c7acef1:0x7e13d589b4a2afbc!8m2!3d-6.3634067!4d106.815779!16s%2Fg%2F121m85rx?entry=ttu&g_ep=EgoyMDI1MDcwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Maps</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
