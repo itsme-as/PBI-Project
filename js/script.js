@@ -27,10 +27,10 @@ function requestAccepted() {
     // Validasi input
     if (!medium || !tools || !style) {
         alert("Please fill in all fields.");
-        return;
     }
 
     localStorage.setItem('requestMedium', medium);
     localStorage.setItem('requestTools', tools);
     localStorage.setItem('requestStyle', style);
+    return;
 }
