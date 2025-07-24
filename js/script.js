@@ -18,6 +18,19 @@ function handleSubmit(event) {
     document.getElementById('thankyou-msg').style.display = 'block';
 }
 
-// Script untuk mengubah guest menjadi username
+//MEngambil data pada request form
+function requestAccepted() {
+    const medium = document.getElementById('req-medium').value;
+    const tools = document.getElementById('req-tools').value;
+    const style = document.getElementById('req-style').value;
 
+    // Validasi input
+    if (!medium || !tools || !style) {
+        alert("Please fill in all fields.");
+        return;
+    }
 
+    localStorage.setItem('requestMedium', medium);
+    localStorage.setItem('requestTools', tools);
+    localStorage.setItem('requestStyle', style);
+}
